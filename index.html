@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Oswald|Roboto&display=swap" rel="stylesheet">
+
+
+    <title>Rick and Morty</title>
+
+    <script type="module" src="/js/htmlEvents.js"></script>
+    <script src="/js/jquery-3.4.1.min.js"></script>
+    <script type="module" src="/js/call_apiOnLoading.js"></script>
+    <script type="module" src="/js/api_service.js"></script>
+    <script src="/js/character_class.js"></script>
+    <script type="module" src="/js/charManager.js"></script>
+    <script src="/js/underscore.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid center header">
+        <div class="display-4"><a href="/">Rick and Morty</a></div>
+
+    </div>
+
+
+
+
+    <main>
+
+        <div class="container-fluid">
+            <div class="form-group">
+                <input id="id_user_input" type="text" class="form-control mt-2" placeholder="search character">
+            </div>
+        </div>
+        <div class="container-fluid dark "></div>
+
+        <div id="id_row" class="row center"></div>
+        <div class="container-fluid  center">
+            <!-- <img id="loading_gif" src="loading.gif" alt=""> -->
+
+            <!-- <button class=" btn btn-primary" id="id_load_more">Load more</button> -->
+            <!-- load more button -->
+
+            <div id="id_load_more" class="button">
+                <span>load more</span>
+                <svg>
+                    <polyline class="o1" points="0 0, 150 0, 150 55, 0 55, 0 0"></polyline>
+                    <polyline class="o2" points="0 0, 150 0, 150 55, 0 55, 0 0"></polyline>
+                </svg>
+            </div>
+
+
+        </div>
+    </main>
+</body>
+
+</html>
